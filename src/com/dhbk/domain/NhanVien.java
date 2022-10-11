@@ -1,7 +1,25 @@
 package com.dhbk.domain;
 
 public class NhanVien extends Person {
-    double luong;
+    private double luong;
+
+    public NhanVien() {
+
+    }
+
+    public NhanVien(double luong) {
+        super();
+        this.luong = luong;
+    }
+
+    public NhanVien(String ten) {
+        super(ten);
+    }
+
+    public NhanVien(String ten, double luong) {
+        super(ten);
+        this.luong = luong;
+    }
 
     public double getLuong() {
         return luong;

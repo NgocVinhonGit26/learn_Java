@@ -1,8 +1,17 @@
 package com.dhbk.domain;
 
 public class Person {
-    String ten;
-    String diaChi;
+    private String ten;
+    private Address diaChi;
+
+    public Person() {
+
+    }
+
+    public Person(String ten) {
+        super();
+        this.ten = ten;
+    }
 
     public String getTen() {
         return ten;
@@ -12,11 +21,12 @@ public class Person {
         this.ten = ten;
     }
 
-    public String getDiaChi() {
+    public Address getDiaChi() {
         return diaChi;
     }
 
-    public void setDiaChi(String diaChi) {
+    public void setDiaChi(Address diaChi) {
         this.diaChi = diaChi;
     }
+
 }
