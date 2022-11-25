@@ -1,6 +1,9 @@
 package com.dhbk.domain;
 
 public class Person {
+
+    private final double LUONG_CO_BAN = 1000000;
+
     private String ten;
     private Address diaChi;
 
@@ -28,5 +31,9 @@ public class Person {
     public void setDiaChi(Address diaChi) {
         this.diaChi = diaChi;
     }
+
+    // public double luong() {
+    // return LUONG_CO_BAN;
+    // }
 
 }

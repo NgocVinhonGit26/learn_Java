@@ -1,35 +1,34 @@
 package com.dhbk.domain;
 
 public class NhanVien extends Person {
-    private double luong;
+    private int yearEXP;
 
     public NhanVien() {
 
     }
 
-    public NhanVien(double luong) {
-        super();
-        this.luong = luong;
-    }
-
-    public NhanVien(String ten) {
+    public NhanVien(String ten, int yearEXP) {
         super(ten);
+        this.yearEXP = yearEXP;
     }
 
-    public NhanVien(String ten, double luong) {
-        super(ten);
-        this.luong = luong;
+    public int getYearEXP() {
+        return yearEXP;
     }
 
-    public double getLuong() {
-        return luong;
+    public void setYearEXP(int yearEXP) {
+        this.yearEXP = yearEXP;
     }
 
-    public void setLuong(double luong) {
-        this.luong = luong;
-    }
+    // @Override
+    // public double luong() {
+    // if (yearEXP < 1) {
+    // return super.luong();
+    // } else if (yearEXP < 5 && yearEXP >= 1) {
+    // return super.luong() * 1.2;
+    // } else {
+    // return super.luong() * 1.5;
+    // }
+    // }
 
-    public void mucLuong() {
-        System.out.println(luong);
-    }
 }
